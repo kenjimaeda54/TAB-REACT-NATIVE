@@ -8,15 +8,16 @@ export default function Home() {
    const navigation = useNavigation();
 
     function sobre() {
-        navigation.navigate("Sobre");
+        navigation.navigate("Contato");
+      
     }
 
     return (
         <View style={{ flex: 1, marginTop: 50, marginBottom: 10 }}>
             <Text>Bem vindo a tela homer</Text>
             <Button
-                title="Ir para tela sobre"
-                onPress={() => sobre}
+              title="Ir para tela de contato"
+              onPress={sobre}
             />
         </View>
     );
